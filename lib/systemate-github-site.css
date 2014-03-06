@@ -1,0 +1,244 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#222;
+    font-weight: bold;
+}
+
+h3 {
+	color:#555;
+}
+
+small {
+	color:#555;
+}
+
+.big {
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+	color:#555;
+	margin-bottom: 20px;
+}
+
+img {
+	max-width:100%;
+}
+
+
+iframe{
+    width:100%;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+body{
+    background-color:#e9eaed;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-header{
+
+}
+
+.main-header>h1{
+    display: inline-block;
+    margin:0;
+    padding: 0 10px 0 10px;
+    font-size: 18px;
+    line-height: 40px;
+
+}
+
+.main-header>ul{
+    display: inline-block;
+    list-style: none;
+}
+
+.main-header>ul>li{
+    display: inline-block;
+    list-style: none;   
+}
+
+.main-header>ul>li>a{
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    color:#627aad;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    opacity: .6;
+    filter: alpha(opacity=60);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.main-header>ul>li>a:hover,
+.main-header>ul>li>a:active{
+    color: #3b5998;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.main-header>h1>span{
+    white-space: nowrap;
+}
+
+.main-header>h1>img{
+    height:24px;
+}
+
+.main-slide{
+    font-size: 48px;
+    line-height: 60px;
+    padding: 105px 50px 170px 50px;
+    background: no-repeat 50% 50% url('../img/slide.jpg');
+    background-size: cover;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    -webkit-transition: padding .5s, margin .5s, line-height .5s, font-size .5s;
+    -moz-transition: padding .5s, margin .5s, line-height .5s, font-size .5s;
+    transition: padding .5s, margin .5s, line-height .5s, font-size .5s;
+}
+
+.main-content{
+    margin-top: -65px;
+}
+
+.content{
+    color: #4e5665;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding:40px;
+    background: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    -webkit-border-radius: 3px;
+}
+
+#menu {
+    margin-top:20px;
+    display: inline-block;
+}
+
+#menu.affix-top{
+
+}
+
+#menu.affix{
+    top:5px;
+}
+
+#menu li.list-group-item{
+    padding: 0;
+}
+
+#menu li.list-group-item>a{
+    color: #333;
+}
+
+#menu li.list-group-item.active{
+    background: #428bca;
+}
+
+#menu li.list-group-item.active>a{
+    color: #fff;
+}
+
+#menu li.list-group-item.active>a:hover{
+    background: transparent;
+}
+
+#social {
+    text-align: right;
+}
+
+#social > div {
+    height:20px;
+    margin:4px;
+    display: inline-block;
+}
+
+#footer {
+    font-size:14px;
+    line-height: 40px;
+}
+
+/*---------PRODUCTS--------------*/
+.products{
+
+}
+.products>div{  
+}
+.products>div>a{
+    min-height: 130px;
+    text-align:center;
+    white-space: normal;
+    padding: 10px;
+    margin: 10px 0;
+    -webkit-transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    transition: background .5s ease-in-out;
+}
+.products>div>a:hover{
+    /*background: #cdbfe3;*/
+    background: #ded0f4;
+}
+.products>div>a>p{
+    font-size:13px;
+    margin:0 0 5px 0;
+}
+.products>div>a>h3{
+    color:#888;
+    -webkit-transition: color .5s ease-in-out;
+    -moz-transition: color .5s ease-in-out;
+    transition: color .5s ease-in-out;
+}
+.products>div>a:hover>h3{
+    color:#000;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    
+}
+@media (min-width: 992px) {
+    
+}
+@media (max-width: 991px) {
+    h1#title{
+        text-align: center;
+    }
+    #menu {
+        display: block;
+    }
+    #menu.affix{
+        top:0;
+        position: static;
+    }
+    .main-content{
+        margin-top:0px; 
+    }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 991px) { 
+    
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    
+}
+
+/* Landscape phones and down */
+@media (max-width: 320px) {
+
+}
