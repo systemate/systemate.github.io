@@ -194,6 +194,11 @@ body{
     .main-content{
         margin-top:0px; 
     }
+    .main-slide{
+        font-size: 36px;
+        line-height: 48px;
+        padding: 70px 30px 100px 30px;
+    }
 }
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -201,7 +206,11 @@ body{
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-    
+    .main-slide{
+        font-size: 24px;
+        line-height: 36px;
+        padding: 50px 20px 70px 20px;
+    }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
