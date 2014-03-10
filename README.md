@@ -1,1 +1,1 @@
-S1-Platform site
+Systemate open-source products site
