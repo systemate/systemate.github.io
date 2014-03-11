@@ -1,0 +1,29 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#222;
+    font-weight: bold;
+}
+
+h3 {
+	color:#555;
+}
+
+small {
+	color:#555;
+}
+
+.big {
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+	color:#555;
+	margin-bottom: 20px;
+}
+
+img {
+	max-width:100%;
+}
+
+
+iframe{
+    width:100%;
+}
