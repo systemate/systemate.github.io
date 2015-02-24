@@ -56,7 +56,7 @@
     		});
 
     		$("#number").on("submit",function(e){
-    			MorphologJS.formatNumber($("#number-number").val(),$("#number-format").val(),function(res){
+    			MorphologJS.formatNumber($("#number-number").val(),$("#number-format").val(),$("#number-space").val(),$("#number-floatDelim").val(),function(res){
     				$("#number-result").html(printJSON(res));
     			});
     			return false;
@@ -234,7 +234,7 @@
 
 			<h2 id="menu-number">Формат числа</h2>
 			<p>
-				<form class="form-horizontal" id="number">
+				<form class="form-horizontal">
 					<div class="form-group">
 						<label class="col-sm-2 control-label">Число:</label>
 						<div class="col-sm-10">
@@ -243,11 +243,17 @@
 					</div>					
 					<div class="form-group">
 						<label class="col-sm-2 control-label">Формат:</label>
-						<div class="col-sm-10">
+						<div class="col-sm-5">
 							<p>
-								<input id="number-format" class="form-control">
+								<input id="number-format" class="form-control" value="#,###.00">															
+								<small><a href="http://docs.oracle.com/javase/tutorial/i18n/format/decimalFormat.html" target="_blank">Подробнее о форматах</a></small>								
 							</p>
-							<button class="btn btn-primary btn-sm">Форматировать!</button>
+
+							<a href="javascript:void(0)" class="btn btn-primary btn-sm" id="number">Форматировать!</a>
+						</div>
+						<div class="col-sm-5">
+							<input id="number-space" class="form-control" style="width:50px;display:inline-block;" value=",">
+							<input id="number-floatDelim" class="form-control" style="width:50px;display:inline-block;" value=".">
 						</div>
 					</div>
 					<div class="form-group">
